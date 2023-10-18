@@ -43,7 +43,7 @@ const Header = () => {
 
           {status === "authenticated" && data?.user && (
             <div className="flex flex-col">
-              <div className="my-4 flex items-center gap-2">
+              <div className="flex items-center gap-2 py-4">
                 <Avatar>
                   <AvatarFallback>
                     {data.user.name?.[0].toUpperCase()}
@@ -70,7 +70,7 @@ const Header = () => {
                 className="w-full justify-start gap-2"
               >
                 <LogInIcon size={16} />
-                Fazer login
+                Fazer Login
               </Button>
             )}
 
